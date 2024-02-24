@@ -89,7 +89,7 @@ async function getData() {
 
     //  Em bị quên đoạn này nè
     data = JSON.parse(result);
-    // 
+    //
 
     data.forEach((product) => {
       const productCard = document.createElement("div");
