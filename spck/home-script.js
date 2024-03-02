@@ -74,11 +74,11 @@
 // getData();
 
 const productContainer = document.querySelector(".product-list");
-const url = "https://shoes-collections.p.rapidapi.com/shoes";
+const url = 'https://shoes-collections.p.rapidapi.com/shoes/3';
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "3dfa1a0dc4mshc4c705f8f82848dp1c28ffjsn76b6e1ca1d8c",
+    "X-RapidAPI-Key": "2ed44d2b6cmshb036950fae6b16ep1d9cf2jsn11d3ea6c1eab",
     "X-RapidAPI-Host": "shoes-collections.p.rapidapi.com",
   },
 };
