@@ -73,12 +73,12 @@ async function getData() {
     //  Em bị quên đoạn này nè
     data = JSON.parse(result);
     // 
-
+    
     data.forEach((product) => {
       const productCard = document.createElement("div");
       productCard.classList.add("product-card");
       productCard.innerHTML = `
-        <img src="${product.image}" alt="${product.name} style="width: 1000px; height: 200px;">
+        <img src="${product.image}" alt="${product.name} style="width: 100px; height: 200px;">
         <h3>${product.name}</h3>
         <p>${product.price}</p>
         <button>Add to Cart</button>
