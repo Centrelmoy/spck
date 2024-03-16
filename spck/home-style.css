@@ -1,115 +1,141 @@
-/* Set styles for the Products page */
-.slider-container {
-    overflow: hidden; 
-    width: 800px;
-    height: 300px; 
-    position: relative; 
-  }
-  
-  .slider-images {
-    display: flex;
-    animation: slideImages infinite 5s ease-in-out; 
-  }
-  
-  .slider-images img {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-  }
+.slider {
+  /* Ẩn nội dung tràn ra khỏi slider */
+  overflow: hidden;
+  /* Định vị tương đối để đặt slide con */
+  position: relative;
+  /* Chiếm 100% chiều rộng container */
+  width: 100%;
+}
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-  
-  .product-item {
-    background-color: #f5f5f5;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .product-card img {
-    object-fit: cover; 
-    width: 200px; 
-    height: 200px; 
-  }
-  
-  .product-item h3 {
-    margin-top: 10px;
-  }
-  
-  .product-item p {
-    margin-top: 5px;
-  }
-  
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .product-card {
-    width: 25%; /* Display 4 products in each row */
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  header {
-    background-color: #333333;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 50px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 25px;
-  }
-  
-  footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: left;
-    margin-top: auto;
-    background-image: url("https://antdisplay.com/pub/media/magefan_blog/blog1/af4994b569c4378bd928aa59a3163234_1_.jpg");
-    background-repeat: no-repeat; 
-    background-position: right;
-    background-size: 440px 220px;
-  }
-  
-  .footer-content {
-    margin-bottom: 20px;
-  }
-  
-  .footer-content p {
-    color: white;
-    font-size: 20px;
-    line-height: 1.5;
-  }
+.slides {
+  /* Cho phép hiển thị nhiều slide cạnh nhau */
+  display: flex;
+  /* Chiếm 100% chiều rộng slider */
+  width: 100%;
+  /* Chiều cao mặc định, có thể điều chỉnh */
+  height: 800px;
+}
+
+/* Styles for the banner content */
+.banner {
+  /* Bố cục flexbox */
+  display: flex;
+  /* Căn chỉnh nội dung hai đầu */
+  justify-content: space-between;
+  /* Căn chỉnh nội dung theo chiều dọc */
+  align-items: center;
+  /* Padding cho nội dung */
+  padding: 1rem 2rem;
+  /* Màu nền */
+  background-color: #f0f0f0;
+  /* Màu chữ */
+  color: #333;
+  /* Chiều cao banner */
+  height: 150px; 
+  /* Khoảng cách dưới banner */
+  margin-bottom: 250px;
+}
+
+.banner h1 {
+  /* Cỡ chữ */
+  font-size: 25px;
+  /* Loại bỏ margin */
+  margin: 0;
+}
+
+.banner p {
+  /* Cỡ chữ */
+  font-size: 1rem;
+  /* Loại bỏ margin */
+  margin: 0;
+}
+
+/* Global styles */
+body {
+  /* Loại bỏ margin, padding */
+  margin: 0;
+  padding: 0;
+  /* Font chữ mặc định */
+  font-family: Arial, sans-serif;
+  /* Bố cục flexbox theo chiều dọc */
+  display: flex;
+  flex-direction: column;
+  /* Chiều cao tối thiểu 100% viewport */
+  min-height: 100vh;
+}
+
+h1 {
+  /* Căn giữa tiêu đề h1 */
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  /* Màu nền header */
+  background-color: #333333;
+  /* Padding cho header */
+  padding: 20px;
+  /* Căn giữa nội dung header */
+  text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+  /* Loại bỏ kiểu định dạng list mặc định */
+  list-style: none;
+  /* Loại bỏ margin, padding */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  /* Hiển thị như block-level element */
+  display: inline-block;
+  /* Khoảng cách giữa các mục menu */
+  margin-right: 50px;
+}
+
+nav ul li a {
+  /* Loại bỏ gạch chân liên kết */
+  text-decoration: none;
+  /* Màu chữ liên kết */
+  color: #ffffff;
+  /* Font chữ đậm */
+  font-weight: bold;
+  /* Cỡ chữ liên kết */
+  font-size: 25px;
+}
+
+/* Footer styles */
+footer {
+  /* Màu nền footer */
+  background-color: #333;
+  /* Padding cho footer */
+  padding: 20px;
+  /* Căn chỉnh nội dung sang trái */
+  text-align: left;
+  /* Đẩy footer xuống cuối trang */
+  margin-top: auto;
+  /* Ảnh nền footer */
+  background-image: url("https://antdisplay.com/pub/media/magefan_blog/blog1/af4994b569c4378bd928aa59a3163234_1_.jpg");
+  /* Lặp lại ảnh nền */
+  background-repeat: no-repeat;
+  /* Vị trí ảnh nền */
+  background-position: right;
+  /* Kích thước ảnh nền */
+  background-size: 440px 220px;
+}
+
+.footer-content {
+  /* Khoảng cách dưới nội dung footer */
+  margin-bottom: 20px;
+}
+
+.footer-content p {
+  /* Màu chữ trắng */
+  color: white;
+  /* Cỡ chữ */
+  font-size: 20px;
+  /* Khoảng cách giữa các dòng */
+  line-height: 1.5;
+}
