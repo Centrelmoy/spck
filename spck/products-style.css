@@ -1,112 +1,97 @@
-/* Kiểu cho trang Products */
+/* Set styles for the Products page */
 .products {
-  display: grid; /* Sử dụng grid layout */
-  grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
-  grid-gap: 20px; /* Khoảng cách giữa các phần tử là 20px */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-/* Kiểu cho từng sản phẩm */
 .product-item {
-  background-color: #f5f5f5; /* Màu nền */
-  padding: 10px; /* Padding cho nội dung */
-  text-align: center; /* Căn giữa nội dung */
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
 }
 
-/* Kiểu cho hình ảnh sản phẩm */
 .product-card img {
-  object-fit: cover; /* Điều chỉnh kích thước ảnh để vừa khung */
-  width: 200px; /* Chiều rộng ảnh là 200px */
-  height: 200px; /* Chiều cao ảnh là 200px */
+  object-fit: cover; 
+  width: 200px; 
+  height: 200px; 
 }
 
-/* Kiểu cho tiêu đề sản phẩm (h3) */
 .product-item h3 {
-  margin-top: 10px; /* Khoảng cách trên của tiêu đề là 10px */
+  margin-top: 10px;
 }
 
-/* Kiểu cho mô tả sản phẩm (p) */
 .product-item p {
-  margin-top: 5px; /* Khoảng cách trên của mô tả là 5px */
+  margin-top: 5px;
 }
 
-/* Kiểu cho danh sách sản phẩm (nếu cần) */
 .product-list {
-  display: flex; /* Sử dụng flexbox */
-  flex-wrap: wrap; /* Cho phép các sản phẩm xuống dòng khi hết chỗ */
-  justify-content: center; /* Căn giữa các sản phẩm theo chiều ngang */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Kiểu cho thẻ chứa nội dung sản phẩm */
 .product-card {
-  width: 25%; /* Chiều rộng bằng 25% để hiển thị 4 sản phẩm mỗi hàng */
-  padding: 10px; /* Padding cho nội dung */
-  box-sizing: border-box; /* Bao gồm padding vào width */
-  text-align: center; /* Căn giữa nội dung */
+  width: 25%; /* Display 4 products in each row */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-/* Kiểu cho tiêu đề trang (h1) */
 h1 {
-  text-align: center; /* Căn giữa tiêu đề trang */
+  text-align: center;
 }
 
-/* Kiểu cho toàn bộ trang (body) */
 body {
-  margin: 0; /* Xóa margin */
-  padding: 0; /* Xóa padding */
-  font-family: Arial, sans-serif; /* Phông chữ mặc định */
-  display: flex; /* Sử dụng flexbox cho bố cục */
-  flex-direction: column; /* Bố cục theo chiều dọc */
-  min-height: 100vh; /* Chiều cao tối thiểu bằng 100% viewport */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Kiểu cho phần header */
 header {
-  background-color: #333333; /* Màu nền */
-  padding: 20px; /* Padding cho nội dung */
-  text-align: center; /* Căn giữa nội dung */
+  background-color: #333333;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Kiểu cho danh sách điều hướng (nav ul) */
 nav ul {
-  list-style-type: none; /* Xóa dấu đầu dòng */
-  margin: 0; /* Xóa margin */
-  padding: 0; /* Xóa padding */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Kiểu cho các phần tử trong danh sách điều hướng (nav ul li) */
 nav ul li {
-  display: inline; /* Hiển thị các phần tử inline để bố trí theo chiều ngang */
-  margin-right: 50px; /* Khoảng cách giữa các phần tử là 50px */
+  display: inline;
+  margin-right: 50px;
 }
 
-/* Kiểu cho liên kết trong danh sách điều hướng (nav ul li a) */
 nav ul li a {
-  text-decoration: none; /* Xóa đường kẻ dưới */
-  color: #ffffff; /* Màu sắc văn bản */
-  font-weight: bold; /* Font weight đậm */
-  font-size: 25px; /* Font size 25px */
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 25px;
 }
 
-/* Kiểu cho phần footer */
 footer {
-  background-color: #333; /* Màu nền footer */
-  padding: 20px; /* Padding cho nội dung footer */
-  text-align: left; /* Căn chỉnh nội dung footer sang trái */
-  margin-top: auto; /* Đẩy footer xuống dưới cùng viewport */
-  
-  /* Kiểu cho ảnh nền footer */
-  background-image: url("https://antdisplay.com/pub/media/magefan_blog/blog1/af4994b569c4378bd928aa59a3163234_1_.jpg"); /* Đường dẫn đến ảnh nền */
-  background-repeat: no-repeat; /* Không lặp lại ảnh nền */
-  background-position: right; /* Vị trí ảnh nền: bên phải */
-  background-size: 440px 220px; /* Kích thước ảnh nền: rộng 440px, cao 220px */
+  background-color: #333;
+  padding: 20px;
+  text-align: left;
+  margin-top: auto;
+  background-image: url("https://antdisplay.com/pub/media/magefan_blog/blog1/af4994b569c4378bd928aa59a3163234_1_.jpg");
+  background-repeat: no-repeat; 
+  background-position: right;
+  background-size: 440px 220px;
 }
 
 .footer-content {
-  margin-bottom: 20px; /* Khoảng cách dưới của nội dung footer là 20px */
+  margin-bottom: 20px;
 }
 
 .footer-content p {
-  color: white; /* Màu sắc văn bản trong footer */
-  font-size: 20px; /* Font size của đoạn văn trong footer */
-  line-height: 1.5; /* Khoảng cách giữa các dòng trong đoạn văn */
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
 }
