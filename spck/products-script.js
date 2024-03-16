@@ -1,92 +1,59 @@
-
+// // Lấy element container chứa danh sách sản phẩm
 // const productContainer = document.querySelector(".product-list");
-// const url = 'https://shoes-collections.p.rapidapi.com/shoes/3';
-// const options = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "2ed44d2b6cmshb036950fae6b16ep1d9cf2jsn11d3ea6c1eab",
-//     "X-RapidAPI-Host": "shoes-collections.p.rapidapi.com",
-//   },
-// };
-// async function getData() {
-//   try {
-//     const response = await fetch(url, options);
-//     const result = await response.text();
 
-//     //  Em bị quên đoạn này nè
-//     data = JSON.parse(result);
-//     //
-
-//     data.forEach((product) => {
-//       const productCard = document.createElement("div");
-//       productCard.classList.add("product-card");
-//       productCard.innerHTML = `
-//         <img src="${product.image}" alt="${product.name}" style="width: 200px; height: 200px;">
-//         <h3>${product.name}</h3>
-//         <p>${product.price}</p>
-//         <button>Add to Cart</button>
-//       `;
-//       productContainer.appendChild(productCard);
-//     });
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
-// getData();
-
-// const url = "https://shoes-collections.p.rapidapi.com/shoes/3";
-// const options = {
-//   method: "GET",
-//   headers: {
-//     "X-RapidAPI-Key": "2ed44d2b6cmshb036950fae6b16ep1d9cf2jsn11d3ea6c1eab",
-//     "X-RapidAPI-Host": "shoes-collections.p.rapidapi.com",
-//   },
-// };
-
-// async function getData() {
-//   try {
-//     const response = await fetch(url, options);
-//     const result = await response.text();
-//     data = JSON.parse(result);
-//     console.log(data);
-//   } catch (error) {
-//     console.error(error);
-//   }
-// };
-// getData();
-
-
-// const productContainer = document.querySelector(".product-list");
+// // Định nghĩa URL API lấy dữ liệu giày
 // const url = "https://shoes-collections.p.rapidapi.com/shoes";
+
+// // Thiết lập các tùy chọn cho request fetch
 // const options = {
-//   method: "GET",
+//   method: "GET", // Sử dụng phương thức GET để lấy dữ liệu
 //   headers: {
-//     "X-RapidAPI-Key": "3dfa1a0dc4mshc4c705f8f82848dp1c28ffjsn76b6e1ca1d8c",
-//     "X-RapidAPI-Host": "shoes-collections.p.rapidapi.com",
+//     "X-RapidAPI-Key": "3dfa1a0dc4mshc4c705f8f82848dp1c28ffjsn76b6e1ca1d8c", // Khóa API (thay thế bằng khóa của bạn)
+//     "X-RapidAPI-Host": "shoes-collections.p.rapidapi.com", // Host của API
 //   },
 // };
+
+// // Hàm bất đồng bộ để lấy dữ liệu sản phẩm
 // async function getData() {
 //   try {
+//     // Thực hiện request fetch với URL và tùy chọn đã định nghĩa
 //     const response = await fetch(url, options);
+
+//     // Kiểm tra response.ok để đảm bảo request thành công
+//     if (!response.ok) {
+//       throw new Error(`Lỗi request: ${response.status}`);
+//     }
+
+//     // Chuyển đổi response sang dạng text
 //     const result = await response.text();
 
-//     //  Em bị quên đoạn này nè
-//     data = JSON.parse(result);
-//     // 
-    
+//     // **Bổ sung phần thiếu:**
+//     // Chuyển đổi chuỗi JSON result thành object data
+//     const data = JSON.parse(result);
+
+//     // Lặp qua từng sản phẩm trong data
 //     data.forEach((product) => {
+//       // Tạo element div đại diện cho một sản phẩm
 //       const productCard = document.createElement("div");
-//       productCard.classList.add("product-card");
+//       productCard.classList.add("product-card"); // Thêm class "product-card"
+
+//       // Tạo nội dung HTML cho thẻ productCard
 //       productCard.innerHTML = `
-//         <img src="${product.image}" alt="${product.name} style="width: 100px; height: 200px;">
+//         <img src="${product.image}" alt="${product.name}" style="width: 100px; height: 200px;">
 //         <h3>${product.name}</h3>
 //         <p>${product.price}</p>
 //         <button>Add to Cart</button>
 //       `;
+
+//       // Thêm productCard vào element container
 //       productContainer.appendChild(productCard);
 //     });
 //   } catch (error) {
-//     console.error(error);
+//     console.error("Lỗi:", error); // Hiển thị lỗi ra console
 //   }
 // }
+
+// // Gọi hàm getData() để bắt đầu lấy dữ liệu
 // getData();
+
+

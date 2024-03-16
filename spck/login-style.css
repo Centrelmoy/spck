@@ -1,97 +1,110 @@
+/* Định nghĩa font chữ và màu sắc mặc định cho toàn bộ trang web */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: Arial, sans-serif; /* Font chữ mặc định */
+  color: #333; /* Màu văn bản mặc định */
+  margin: 20px; /* Khoảng cách lề cho nội dung trang web */
 }
 
+/* Canh giữa tất cả các tiêu đề h1 */
 h1 {
   text-align: center;
 }
 
+/* Định kiểu cho form đăng nhập */
 form {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin: 0 auto;
+  display: flex; /* Sử dụng flexbox để bố cục form */
+  flex-direction: column; /* Sắp xếp các phần tử form theo chiều dọc */
+  max-width: 300px; /* Hạn chế chiều rộng form tối đa là 300px */
+  margin: 0 auto; /* Canh giữa form theo chiều ngang */
 }
 
+/* Thêm khoảng cách lề trên cho mỗi label */
 label {
   margin-top: 10px;
 }
 
+/* Thêm khoảng đệm và khoảng cách lề cho các trường nhập liệu */
 input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="password"] {
-  padding: 5px;
-  margin-top: 5px;
+  padding: 5px; /* Thêm khoảng đệm cho các trường nhập liệu */
+  margin-top: 5px; /* Thêm khoảng cách lề trên cho mỗi trường nhập liệu */
 }
 
+/* Thêm khoảng đệm và khoảng cách lề cho nút submit */
 button {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 10px; /* Thêm khoảng đệm cho nút */
+  margin-top: 10px; /* Thêm khoảng cách lề trên cho nút */
+}
+/* Định nghĩa font chữ và màu sắc mặc định cho toàn bộ trang web */
+body {
+  font-family: Arial, sans-serif; /* Font chữ mặc định */
+  color: #333; /* Màu văn bản mặc định */
 }
 
+/* Canh giữa tất cả các tiêu đề h1 */
+h1 {
+  text-align: center;
+}
+
+/* Bố cục chính cho trang web */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  /* Set styles for the header */
-  h1 {
-    text-align: center;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  header {
-    background-color: #333333;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 50px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 25px;
-  }
-  
-  footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: left;
-    margin-top: auto;
-    background-image: url("https://antdisplay.com/pub/media/magefan_blog/blog1/af4994b569c4378bd928aa59a3163234_1_.jpg");
-    background-repeat: no-repeat; 
-    background-position: right;
-    background-size: 440px 220px;
-  }
-  
-  .footer-content {
-    margin-bottom: 20px;
-  }
-  
-  .footer-content p {
-    color: white;
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  
+  margin: 0; /* Xóa margin */
+  padding: 0; /* Xóa padding */
+  display: flex; /* Sử dụng flexbox để bố cục */
+  flex-direction: column; /* Bố cục theo chiều dọc */
+  min-height: 100vh; /* Chiều cao tối thiểu bằng 100% chiều cao viewport */
+}
+
+/* Định nghĩa kiểu cho phần header */
+header {
+  background-color: #333333; /* Màu nền */
+  padding: 20px; /* Padding */
+  text-align: center; /* Căn chỉnh giữa */
+}
+
+/* Định nghĩa kiểu cho danh sách điều hướng */
+nav ul {
+  list-style-type: none; /* Xóa dấu đầu dòng */
+  margin: 0; /* Xóa margin */
+  padding: 0; /* Xóa padding */
+}
+
+/* Định nghĩa kiểu cho các phần tử trong danh sách điều hướng */
+nav ul li {
+  display: inline; /* Hiển thị inline để bố trí theo chiều ngang */
+  margin-right: 50px; /* Margin-right 50px giữa các phần tử */
+}
+
+/* Định nghĩa kiểu cho liên kết trong danh sách điều hướng */
+nav ul li a {
+  text-decoration: none; /* Xóa đường kẻ dưới */
+  color: #ffffff; /* Màu văn bản trắng */
+  font-weight: bold; /* Font-weight đậm */
+  font-size: 25px; /* Font size 25px */
+}
+
+/* Định nghĩa kiểu cho phần footer */
+footer {
+  background-color: #333; /* Màu nền */
+  padding: 20px; /* Padding */
+  text-align: left; /* Căn chỉnh trái */
+  margin-top: auto; /* Đẩy footer xuống dưới cùng viewport */
+  background-image: url("https://antdisplay.com/pub/media/magefan_blog/blog1/af4994b569c4378bd928aa59a3163234_1_.jpg"); /* Ảnh nền */
+  background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+  background-position: right; /* Vị trí ảnh nền bên phải */
+  background-size: 440px 220px; /* Kích thước ảnh nền */
+}
+
+/* Định nghĩa kiểu cho nội dung trong phần footer */
+.footer-content {
+  margin-bottom: 20px; /* Margin-bottom 20px */
+}
+
+/* Định nghĩa kiểu cho đoạn văn trong phần footer */
+.footer-content p {
+  color: white; /* Màu văn bản trắng */
+  font-size: 20px; /* Font size 20px */
+  line-height: 1.5; /* Line height 1.5 để dễ đọc hơn */
+}
